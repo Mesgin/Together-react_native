@@ -1,5 +1,8 @@
-import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
+import ListItem from './src/components/ListItem/ListItem'
+import PlaceInput from './src/components/PlaceInput/PlaceInput'
+import PlaceList from './src/components/PlaceList/PlaceList'
 
 export default class App extends React.Component {
   state = {
@@ -27,29 +30,16 @@ export default class App extends React.Component {
   }
 
   render() {
-    const placesOutput = this.state.places.map((place,i)=>{
-      return <Text key={i}> {place} </Text>
-    })
     return (
       <View style={styles.container}>
-        <View style={styles.inputPlace}>
-          <TextInput
-            style={styles.placeInput}
-            onChangeText={this.placeTextHandler}
-            value={this.state.placeName}
-            placeholder='Serach...'
-          />
-          <Button
-            title='add'
-            style={styles.placeButton}
-            onPress={this.addPlace}
-          />
-        </View>
-        <View>
-          {placesOutput}
-        </View>
+        <PlaceInput 
+          placeName={this.state.placeName}
+          placeTextHandler={this.placeTextHandler}
+          addPlace={this.addPlace}
+        />
+        <PlaceList places={this.state.places}/>
       </View>
-    );
+    )
   }
 }
 
@@ -60,22 +50,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
-  },
-  inputPlace: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    width: '100%'
-  },
-  placeInput: {
-    width: '70%',
-    height: 40,
-    padding: 10,
-    borderColor: '#d7d9dd',
-    borderWidth: 2,
-    borderRadius: 5
-  },
-  placeButton: {
-    width: '30%'
   }
-});
+})
