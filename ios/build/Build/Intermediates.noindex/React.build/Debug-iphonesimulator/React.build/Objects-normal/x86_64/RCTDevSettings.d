@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/mo/Desktop/Projects/together/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/mo/Desktop/Projects/together/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/mo/Desktop/Projects/together/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
