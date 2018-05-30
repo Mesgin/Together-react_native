@@ -3,16 +3,15 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import ListItem from '../ListItem/ListItem'
 
 const PlaceList = (props) => {
-
-
   return (
     <FlatList
       style={styles.listContainer}
       data={props.places}
       renderItem={(info) => (
         <ListItem
-          placeName={info.item.value}
+          placeName={info.item.name}
           onItemPressed={() => props.deletePlace(info.item.key)}
+          placeImage={info.item.placeImage}
         />
       )}
     />

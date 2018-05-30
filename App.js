@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
 import ListItem from './src/components/ListItem/ListItem'
 import PlaceInput from './src/components/PlaceInput/PlaceInput'
 import PlaceList from './src/components/PlaceList/PlaceList'
+// import placeImage from './src/assets/img/img.jpg'
 
 export default class App extends React.Component {
   state = {
@@ -23,7 +24,13 @@ export default class App extends React.Component {
 
     this.setState(prevState => {
       return {
-        places: prevState.places.concat({key: String(Math.random()),value: prevState.placeName}),
+        places: prevState.places.concat({
+            key: String(Math.random()),
+            name: prevState.placeName,
+            placeImage: {
+              uri: 'https://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2014/03/26/19/web-tehran-getty-cv3-DONTUSEAGAIN.jpg'
+            }
+          }),
         placeName: ''
       }
     })
