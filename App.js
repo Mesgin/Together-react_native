@@ -23,8 +23,18 @@ export default class App extends React.Component {
 
     this.setState(prevState => {
       return {
-        places: prevState.places.concat(prevState.placeName),
+        places: prevState.places.concat({key: String(Math.random()),value: prevState.placeName}),
         placeName: ''
+      }
+    })
+  }
+
+  deletePlace = (key) => {
+    this.setState((prevState)=>{
+      return {
+        places: prevState.places.filter((place)=>{
+          return place.key !== key
+        })
       }
     })
   }
@@ -32,12 +42,15 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <PlaceInput 
+        <PlaceInput
           placeName={this.state.placeName}
           placeTextHandler={this.placeTextHandler}
           addPlace={this.addPlace}
         />
-        <PlaceList places={this.state.places}/>
+        <PlaceList
+          places={this.state.places}
+          deletePlace={this.deletePlace}
+        />
       </View>
     )
   }
