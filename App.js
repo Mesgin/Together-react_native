@@ -12,7 +12,7 @@ const store = configureStore()
 Navigation.registerComponent('together.AuthScreen', () => AuthScreen, store, Provider)
 Navigation.registerComponent('together.FindPlaceScreen', () => FindPlaceScreen, store, Provider)
 Navigation.registerComponent('together.SharePlaceScreen', () => SharePlaceScreen, store, Provider)
-Navigation.registerComponent('together.PlaceDetailScreen', () => PlaceDetailScreen)
+Navigation.registerComponent('together.PlaceDetailScreen', () => PlaceDetailScreen, store, Provider)
 
 Navigation.startSingleScreenApp({
   screen: {
