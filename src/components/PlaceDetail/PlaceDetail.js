@@ -29,6 +29,7 @@ const PlaceDetail = (props) => {
     </Modal>
   )
 }
+// org.reactjs.native.example.together
 
 const styles = StyleSheet.create({
   modalContainer: {
