@@ -51,7 +51,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6U3LdwD44VmE5g1Cas4kuXswP54=
+		V7UBHVeJH+joQW1WdMGDB2ztGZY=
+		</data>
+		<key>Ionicons.ttf</key>
+		<data>
+		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -63,7 +67,7 @@
 		</data>
 		<key>PlugIns/togetherTests.xctest.dSYM/Contents/Resources/DWARF/togetherTests</key>
 		<data>
-		gQ2TW9uN5FVlUVVida78plB12zE=
+		aJoYSv14yH+lil9SsVudi/M3exU=
 		</data>
 		<key>PlugIns/togetherTests.xctest/Info.plist</key>
 		<data>
@@ -75,7 +79,7 @@
 		</data>
 		<key>PlugIns/togetherTests.xctest/togetherTests</key>
 		<data>
-		Y+Fu9n8iSTFSxo7rIOIhZInGBg4=
+		i9hrZMKwsxTGk6jFlZ81CLs/UAI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -192,6 +196,17 @@
 			xDe7lkxC6ot8QncGaSp6qZ9/XbOQA/fGkPvRG+5ksCo=
 			</data>
 		</dict>
+		<key>Ionicons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
+			</data>
+		</dict>
 		<key>PlugIns/togetherTests.xctest.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -207,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gQ2TW9uN5FVlUVVida78plB12zE=
+			aJoYSv14yH+lil9SsVudi/M3exU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lJ/JSH7Y8AgOHYy/JUFcfc0Ro7kqU4w2mh7mnsv7a4A=
+			6SRHHLqDFQUL+VDGa0Jxp2NFXFt0IA9EWBQXnxrzoJk=
 			</data>
 		</dict>
 		<key>PlugIns/togetherTests.xctest/Info.plist</key>
@@ -240,11 +255,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y+Fu9n8iSTFSxo7rIOIhZInGBg4=
+			i9hrZMKwsxTGk6jFlZ81CLs/UAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			b0prZItVsJNPnsNnhSVDgu7wJKWqijoUJmSaFuPgU1o=
+			W033w2waUasbMhxQY8rOBYfkDNIAUNALb8K/e6F8mk4=
 			</data>
 		</dict>
 	</dict>

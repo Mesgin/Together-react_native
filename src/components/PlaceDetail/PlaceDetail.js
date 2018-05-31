@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, View, Modal, Image, Button } from 'react-native'
+import { StyleSheet, Text, View, Modal, Image, Button, TouchableOpacity } from 'react-native'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 const PlaceDetail = (props) => {
   let modalContent = null
@@ -23,8 +24,16 @@ const PlaceDetail = (props) => {
     >
       <View style={styles.modalContainer} >
         {modalContent}
-        <Button title='Delete' onPress={props.deleteSelectedPlace} color='red' />
-        <Button title='Close' onPress={props.closeModal} />
+        <View style={styles.buttons}>
+          <TouchableOpacity onPress={props.closeModal} >
+            <Icon name='ios-arrow-dropdown-circle' color='#56b0ff' size={40} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={props.deleteSelectedPlace} >
+            <Icon name='ios-trash' color='red' size={40} />
+          </TouchableOpacity>
+        </View>
+        {/* <Button title='Delete' onPress={props.deleteSelectedPlace} color='red' /> */}
+        {/* <Button title='Close' onPress={props.closeModal} /> */}
       </View>
     </Modal>
   )
@@ -33,7 +42,7 @@ const PlaceDetail = (props) => {
 
 const styles = StyleSheet.create({
   modalContainer: {
-    marginTop: 25
+    marginTop: 20
   },
   placeImage: {
     width: '100%',
@@ -44,6 +53,13 @@ const styles = StyleSheet.create({
     padding: 15,
     fontSize: 30,
     textAlign: 'center'
+  },
+  buttons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    padding: 0
+
   }
 })
 
