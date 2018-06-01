@@ -19,7 +19,7 @@ class PlaceDetail extends Component {
         <Text style={styles.placeName}>{this.props.selectedPlace.name}</Text>
         <View style={styles.buttons}>
           <TouchableOpacity onPress={this.deletePlaceHandler} >
-            <Icon name='ios-trash' color='red' size={40} />
+            <Icon name='ios-trash' color='tomato' size={40} />
           </TouchableOpacity>
         </View>
       </View>
