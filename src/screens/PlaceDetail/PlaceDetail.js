@@ -36,10 +36,10 @@ const styles = StyleSheet.create({
     height: 200,
   },
   placeName: {
-    fontWeight: 'bold',
     padding: 15,
     fontSize: 30,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'HelveticaNeue-UltraLight'
   },
   buttons: {
     flexDirection: 'row',

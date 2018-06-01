@@ -19,6 +19,6 @@ Navigation.registerComponent('together.SideDrawerScreen', () => SideDrawerScreen
 Navigation.startSingleScreenApp({
   screen: {
     screen: 'together.AuthScreen',
-    title: 'Login'
+    title: 'Sign Up'
   }
 })

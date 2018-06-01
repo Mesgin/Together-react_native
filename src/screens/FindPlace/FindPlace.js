@@ -8,6 +8,9 @@ class FindPlaceScreen extends Component {
     super(props)
 
     this.props.navigator.setOnNavigatorEvent(this.sideDrawerEvent)
+    this.props.navigator.setStyle({
+      navBarButtonColor: 'red'
+    })
   }
 
   sideDrawerEvent = event => {
@@ -19,7 +22,7 @@ class FindPlaceScreen extends Component {
       }
     }
   }
-  
+
   selectPlaceHandler = key => {
 
     const selectedPlace = this.props.places.find(place => {
