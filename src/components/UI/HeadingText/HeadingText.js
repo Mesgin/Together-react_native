@@ -15,6 +15,7 @@ export default HeadingText = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontFamily: 'HelveticaNeue-UltraLight',
-    fontSize: 40
+    fontSize: 40,
+    color: 'white',
   }
 })

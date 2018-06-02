@@ -18,9 +18,14 @@ const styles = StyleSheet.create({
     // borderColor: '#eee',
     // borderRadius: 20,
     padding: 10,
-    margin: 5,
+    marginTop: 5,
+    marginBottom: 5,
     backgroundColor: 'transparent',
     color: 'white',
     fontFamily: 'HelveticaNeue-Light',
+    borderColor: '#bbb',
+    backgroundColor: 'transparent',
+    borderBottomWidth: 1,
+    borderBottomColor: 'white'
   }
 })

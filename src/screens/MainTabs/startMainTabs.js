@@ -26,7 +26,6 @@ const startMainTabs = () => {
         {
           screen: 'together.SharePlaceScreen',
           label: 'Share Place',
-          title: 'Share Place',
           icon: sources[1],
           navigatorButtons: {
             leftButtons: [

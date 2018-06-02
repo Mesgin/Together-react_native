@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Button, StyleSheet, ImageBackground } from 'react-native'
+import { View, Text, Button, StyleSheet, ImageBackground, Dimensions } from 'react-native'
 import startMainTabs from '../MainTabs/startMainTabs'
 import DefaultInput from '../../components/UI/DefaultInput/DefaultInput'
 import HeadingText from '../../components/UI/HeadingText/HeadingText'
@@ -12,6 +12,26 @@ class AuthScreen extends Component {
     navBarHidden: true
   }
 
+  constructor(props){
+    super(props)
+
+    Dimensions.addEventListener('change', this.viewModeListener)    
+  }
+
+  state = {
+    viewMode: Dimensions.get('window').height > 500 ? 'portrait' : 'landscape'
+  }
+
+  viewModeListener = (dims) => {
+      this.setState({
+        viewMode: dims.window.height > 500 ? 'portrait' : 'landscape'
+      })
+  }
+
+  componentWillUnmount() {
+    Dimensions.removeEventListener('change', this.viewModeListener)
+  }
+
   loginHandler = () => {
     startMainTabs()
   }
@@ -19,16 +39,19 @@ class AuthScreen extends Component {
   render() {
     return (
       <ImageBackground source={bg} style={styles.background} >
-      <View style={styles.container} >
-        <HeadingText style={styles.heading} >Sign Up</HeadingText>
-        <ButtonBG onPress={this.loginHandler} style={styles.button} color='#329ca8' >Already a Member</ButtonBG> 
-        <View style={styles.inputContainer} >
-          <DefaultInput placeholder='E-Mail Address' placeholderTextColor='white' style={styles.input} />
-          <DefaultInput placeholder='Password' placeholderTextColor='white' style={styles.input} />
-          <DefaultInput placeholder='Confirm Password' placeholderTextColor='white' style={styles.input} />
+        <View style={styles.container} >
+          <HeadingText
+            style={this.state.viewMode === 'portrait' ? styles.portraitHeading : styles.landscapeHeading} >
+            Sign Up
+          </HeadingText>
+          <ButtonBG onPress={this.loginHandler} style={styles.button} color='#329ca8' >Already a Member</ButtonBG>
+          <View style={styles.inputContainer} >
+            <DefaultInput placeholder='E-Mail Address' placeholderTextColor='white' />
+            <DefaultInput placeholder='Password' placeholderTextColor='white' />
+            <DefaultInput placeholder='Confirm Password' placeholderTextColor='white' />
+          </View>
+          <ButtonBG onPress={this.loginHandler} style={styles.button} color='#f26d00' >Sign Up</ButtonBG>
         </View>
-          <ButtonBG onPress={this.loginHandler} style={styles.button} color='#f26d00' >Sign Up</ButtonBG> 
-      </View>
       </ImageBackground>
     )
   }
@@ -48,23 +71,14 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10
   },
-  button: {
-    borderRadius: 50,
-    paddingTop: 10,
-    paddingRight: 20,
-    paddingBottom: 10,
-    paddingLeft: 20,
-  },
-  input: {
-    borderColor: '#bbb',
-    backgroundColor: 'transparent',
-    borderBottomWidth: 1,
-    borderBottomColor: 'white'
-  },
-  heading: {
+  portraitHeading: {
     color: 'white',
     marginBottom: 50
-  }
+  },
+  landscapeHeading: {
+    color: 'white',
+    marginBottom: 10
+  },
 })
 
 export default AuthScreen
